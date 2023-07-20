@@ -1,0 +1,31 @@
+{
+    "name": "elsoftweristacl/bagisto-mercadopago-plus",
+    "description": "MercadoPago module for Bagisto.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Godoi",
+            "email": "cgodoi@Elsoftwerista.cl"
+        }
+    ],
+
+    "require": {
+        "mercadopago/dx-php": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elsoftwerista\\MercadoPago\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elsoftwerista\\MercadoPago\\Providers\\BagistoMercadoPagoServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+
+    "minimum-stability": "dev"
+}
